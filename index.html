@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Click TI Suporte | Soluções de TI para sua empresa</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #18304a;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #00bfff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero h1 span {
+            color: #00bfff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #c8d4e3;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 28px;
+            background: #00bfff;
+            color: #07111f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .services {
+            padding: 70px 8%;
+            background: #0b1728;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #101f33;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #1c3955;
+        }
+
+        .card h3 {
+            color: #00bfff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #c8d4e3;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #9fb0c2;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Click <span>TI</span> Suporte
+        </div>
+
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>
+                Você cuida do seu negócio.
+                <span>Nós cuidamos da sua TI.</span>
+            </h1>
+
+            <p>
+                Suporte e gerenciamento de infraestrutura de TI
+                para pequenas e médias empresas.
+            </p>
+
+            <a class="button" href="#contato">
+                Fale conosco
+            </a>
+
+        </div>
+    </section>
+
+    <section class="services" id="servicos">
+
+        <h2>Nossos serviços</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Suporte Técnico</h3>
+                <p>
+                    Suporte remoto e manutenção de computadores
+                    para sua empresa.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Microsoft 365</h3>
+                <p>
+                    Configuração e gerenciamento de Microsoft 365,
+                    e-mails e ferramentas corporativas.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Redes e Wi-Fi</h3>
+                <p>
+                    Configuração, organização e suporte
+                    de redes corporativas.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Servidores</h3>
+                <p>
+                    Administração e suporte para servidores
+                    Windows e Linux.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Backup</h3>
+                <p>
+                    Soluções para proteção e recuperação
+                    dos dados da empresa.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Monitoramento</h3>
+                <p>
+                    Monitoramento de servidores, computadores
+                    e infraestrutura de TI.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="contato">
+        <p>Click TI Suporte</p>
+        <p>São Paulo - SP</p>
+        <p>Você cuida do seu negócio. Nós cuidamos da sua TI.</p>
+    </footer>
+
+</body>
+</html>
