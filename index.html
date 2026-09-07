@@ -1,233 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Click TI Suporte | Soluções de TI para sua empresa</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #07111f;
-            color: white;
-        }
-
-        header {
-            padding: 25px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #18304a;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .logo span {
-            color: #00bfff;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-        }
-
-        .hero {
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            padding: 60px 8%;
-        }
-
-        .hero-content {
-            max-width: 700px;
-        }
-
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
-            line-height: 1.1;
-        }
-
-        .hero h1 span {
-            color: #00bfff;
-        }
-
-        .hero p {
-            font-size: 20px;
-            line-height: 1.6;
-            color: #c8d4e3;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 15px 28px;
-            background: #00bfff;
-            color: #07111f;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .services {
-            padding: 70px 8%;
-            background: #0b1728;
-        }
-
-        .services h2 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #101f33;
-            padding: 30px;
-            border-radius: 10px;
-            border: 1px solid #1c3955;
-        }
-
-        .card h3 {
-            color: #00bfff;
-            margin-bottom: 12px;
-        }
-
-        .card p {
-            color: #c8d4e3;
-            line-height: 1.5;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #9fb0c2;
-        }
-
-        @media (max-width: 700px) {
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            nav {
-                display: none;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <div class="logo">
-            Click <span>TI</span> Suporte
-        </div>
-
-        <nav>
-            <a href="#servicos">Serviços</a>
-            <a href="#contato">Contato</a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Click TI Suporte: suporte técnico e infraestrutura de TI para empresas."
+    />
+    <title>Click TI Suporte | Tecnologia para o seu negócio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="logo" href="#inicio" aria-label="Click TI Suporte - início">
+        <img src="logo-click-ti.png" alt="Click TI Suporte" />
+      </a>
+      <a class="botao botao-contorno" href="#contato">Entre em contato</a>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
+    <main id="inicio">
+      <section class="faixa-confianca" aria-label="Diferenciais de atendimento">
+        <span>✓ Suporte para empresas</span>
+        <span>✓ Atendimento remoto e presencial</span>
+        <span>✓ Monitoramento preventivo</span>
+      </section>
 
-            <h1>
-                Você cuida do seu negócio.
-                <span>Nós cuidamos da sua TI.</span>
-            </h1>
-
-            <p>
-                Suporte e gerenciamento de infraestrutura de TI
-                para pequenas e médias empresas.
-            </p>
-
-            <a class="button" href="#contato">
-                Fale conosco
-            </a>
-
-        </div>
-    </section>
-
-    <section class="services" id="servicos">
-
-        <h2>Nossos serviços</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Suporte Técnico</h3>
-                <p>
-                    Suporte remoto e manutenção de computadores
-                    para sua empresa.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Microsoft 365</h3>
-                <p>
-                    Configuração e gerenciamento de Microsoft 365,
-                    e-mails e ferramentas corporativas.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Redes e Wi-Fi</h3>
-                <p>
-                    Configuração, organização e suporte
-                    de redes corporativas.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Servidores</h3>
-                <p>
-                    Administração e suporte para servidores
-                    Windows e Linux.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Backup</h3>
-                <p>
-                    Soluções para proteção e recuperação
-                    dos dados da empresa.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Monitoramento</h3>
-                <p>
-                    Monitoramento de servidores, computadores
-                    e infraestrutura de TI.
-                </p>
-            </div>
-
+      <section class="hero">
+        <div class="hero-texto">
+          <p class="etiqueta">SUPORTE DE TI PARA EMPRESAS</p>
+          <h1>Você cuida do seu negócio.<br /><span>Nós cuidamos da sua TI.</span></h1>
+          <p class="introducao">
+            Soluções práticas em tecnologia, suporte técnico e infraestrutura para sua empresa trabalhar com mais segurança e tranquilidade.
+          </p>
+          <a
+            class="botao botao-principal"
+            href="https://wa.me/5511999929318?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Click%20TI%20Suporte."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Falar pelo WhatsApp <span aria-hidden="true">→</span>
+          </a>
         </div>
 
-    </section>
+        <div class="cartao-tecnologia" aria-label="Ilustração de tecnologia">
+          <div class="luz luz-um"></div>
+          <div class="luz luz-dois"></div>
+          <div class="janela">
+            <div class="bolinhas"><i></i><i></i><i></i></div>
+            <p>&gt; sistemas online</p>
+            <p>&gt; dados protegidos</p>
+            <p>&gt; equipe conectada<span class="cursor">_</span></p>
+          </div>
+          <div class="selo"><span>✓</span> TI que funciona</div>
+        </div>
+      </section>
+
+      <section class="servicos" aria-labelledby="titulo-servicos">
+        <div class="servicos-cabecalho">
+          <div>
+            <p class="etiqueta">COMO PODEMOS AJUDAR</p>
+            <h2 id="titulo-servicos">Tecnologia simples,<br />suporte de verdade.</h2>
+          </div>
+          <p class="servicos-introducao">Conheça as soluções que ajudam sua empresa a trabalhar com mais segurança, organização e tranquilidade.</p>
+        </div>
+        <div class="carrossel-servicos">
+          <div class="lista-servicos" id="lista-servicos">
+            <article><span>01</span><h3>Suporte técnico</h3><p>Ajuda rápida para computadores, sistemas e usuários.</p></article>
+            <article><span>02</span><h3>Redes e Wi-Fi</h3><p>Conexão estável e segura para a sua empresa.</p></article>
+            <article><span>03</span><h3>Monitoramento de máquinas</h3><p>Acompanhamento preventivo para identificar problemas antes que eles afetem o seu trabalho.</p></article>
+            <article><span>04</span><h3>Backup e segurança</h3><p>Proteção para os dados que mantêm seu negócio em movimento.</p></article>
+            <article><span>05</span><h3>Microsoft 365</h3><p>Ajuda com e-mails, ferramentas de colaboração e organização da equipe.</p></article>
+            <article><span>06</span><h3>Computadores e impressoras</h3><p>Manutenção e suporte para os equipamentos do seu dia a dia.</p></article>
+            <article><span>07</span><h3>Servidores</h3><p>Suporte para ambientes Windows e Linux, com foco em estabilidade.</p></article>
+            <article><span>08</span><h3>Suporte remoto</h3><p>Atendimento ágil para resolver questões sem esperar uma visita técnica.</p></article>
+          </div>
+          <div class="controles-carrossel">
+            <p><span id="servico-atual">01</span> <small>/ 08 serviços</small></p>
+            <div>
+              <button class="controle-slide" type="button" data-direcao="anterior" aria-label="Ver serviços anteriores">←</button>
+              <button class="controle-slide" type="button" data-direcao="proximo" aria-label="Ver próximos serviços">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="como-funciona" aria-labelledby="titulo-como-funciona">
+        <div class="secao-cabecalho">
+          <p class="etiqueta">ATENDIMENTO DESCOMPLICADO</p>
+          <h2 id="titulo-como-funciona">Como funciona</h2>
+          <p>Um processo simples para sua empresa receber o suporte que precisa.</p>
+        </div>
+        <ol class="passos">
+          <li><span>01</span><h3>Entre em contato</h3><p>Conte o que sua empresa precisa pelo WhatsApp.</p></li>
+          <li><span>02</span><h3>Entendemos a necessidade</h3><p>Avaliamos o cenário e indicamos a melhor solução.</p></li>
+          <li><span>03</span><h3>Resolvemos e acompanhamos</h3><p>Executamos o suporte e ajudamos a prevenir novos problemas.</p></li>
+        </ol>
+      </section>
+
+      <section class="quem-somos" id="quem-somos" aria-labelledby="titulo-quem-somos">
+        <div class="quem-somos-destaque">
+          <p class="etiqueta">QUEM SOMOS</p>
+          <h2 id="titulo-quem-somos">Tecnologia próxima,<br />cuidado constante.</h2>
+        </div>
+        <div class="quem-somos-texto">
+          <p>
+            A <strong>Click TI Suporte</strong> é uma empresa focada em tornar a tecnologia uma aliada do seu negócio. Oferecemos atendimento claro, soluções práticas e suporte para que sua equipe possa trabalhar sem parar.
+          </p>
+          <p>
+            Cuidamos dos computadores, redes, dados e da infraestrutura de TI da sua empresa com atenção, responsabilidade e foco na prevenção de problemas.
+          </p>
+        </div>
+      </section>
+
+      <section class="diferenciais" aria-labelledby="titulo-diferenciais">
+        <div>
+          <p class="etiqueta">POR QUE A CLICK TI</p>
+          <h2 id="titulo-diferenciais">TI cuidada de perto.</h2>
+        </div>
+        <ul>
+          <li><strong>Atendimento próximo</strong><span>Comunicação clara, sem complicar a tecnologia.</span></li>
+          <li><strong>Foco em prevenção</strong><span>Monitoramento e boas práticas para reduzir imprevistos.</span></li>
+          <li><strong>Soluções práticas</strong><span>Recomendações adequadas à realidade do seu negócio.</span></li>
+          <li><strong>Mais tranquilidade</strong><span>Sua equipe trabalha com mais segurança e continuidade.</span></li>
+        </ul>
+      </section>
+    </main>
 
     <footer id="contato">
-        <p>Click TI Suporte</p>
-        <p>São Paulo - SP</p>
-        <p>Você cuida do seu negócio. Nós cuidamos da sua TI.</p>
+      <div><p><strong>Click TI Suporte</strong></p><p>Tecnologia para o seu negócio.</p></div>
+      <div><p>São Paulo, SP e região</p><p>Atendimento remoto e presencial</p></div>
+      <div class="contatos-rodape">
+        <a href="mailto:clickti.sup@gmail.com">clickti.sup@gmail.com</a>
+        <a href="https://wa.me/5511999929318?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Click%20TI%20Suporte." target="_blank" rel="noopener noreferrer">WhatsApp: (11) 99992-9318 →</a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
