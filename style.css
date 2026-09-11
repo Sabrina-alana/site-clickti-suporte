@@ -63,6 +63,7 @@ h1 span { color: var(--azul); }
 .introducao { max-width: 580px; margin: 26px 0 30px; color: var(--cinza); font-size: 18px; line-height: 1.65; }
 .botao-principal { padding: 16px 21px; color: white; background: var(--azul); box-shadow: 0 12px 24px rgba(11, 79, 186, .20); }
 .botao-principal:hover { background: #073d91; }
+.botao-servico { margin-top: 18px; font-size: 14px; }
 .botao-principal span { font-size: 22px; }
 
 .cartao-tecnologia { position: relative; min-height: 375px; overflow: hidden; border-radius: 22px; background: var(--azul-escuro); box-shadow: 0 24px 50px rgba(7, 26, 56, .2); }

@@ -6,7 +6,8 @@ function atualizarNumeroDoServico() {
   const cartao = listaServicos.querySelector("article");
   const espacamento = 16;
   const indice = Math.round(listaServicos.scrollLeft / (cartao.offsetWidth + espacamento)) + 1;
-  numeroServico.textContent = String(Math.min(indice, 8)).padStart(2, "0");
+  const totalServicos = listaServicos.querySelectorAll("article").length;
+  numeroServico.textContent = String(Math.min(indice, totalServicos)).padStart(2, "0");
 }
 
 botoesSlide.forEach((botao) => {
